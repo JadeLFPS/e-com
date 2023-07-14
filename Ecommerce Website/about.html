@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+ <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>DonutStore | One Stop Donut Shop</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+    </head>
+<body>
+    <div class="header">        
+        <div class="container">  
+            <div class="navbar">
+                <div class="logo">
+                    <a href="home.html"><img src="images/cart1.png" width="128px"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="product.html">Products</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="account.html">Account</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </nav>
+                <img src="images/cart.png" width="30px" height="30px">
+                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+        </div>
+    </div>
+
+    <div class="about">
+        <div class="container">
+            <img src="images/Banner.png" class="banner">
+            <div class="row">
+                </div>
+                <div class="col-2">
+                    <h1>DONUT STORE</h1>
+                    <p>Welcome to Donut Store, the ultimate destination for all your indulgent donut cravings! With our love for all things pink, we have created a haven where delectable treats meet the charm of a pink paradise. Step into our whimsical world and prepare to embark on a delightful journey of flavors and enchantment.
+
+                        At Donut Store, we are passionate about crafting the most exquisite donuts that not only taste heavenly but also capture the essence of joy and happiness. Our team of skilled bakers and confectionery artists work tirelessly to bring you a tantalizing array of handcrafted, freshly baked donuts that will tickle your taste buds and make your heart flutter.
+                        
+                        Inspired by the beauty of pink, our donuts are a celebration of sweetness and elegance. From classic glazed donuts to imaginative creations adorned with delightful sprinkles, our menu boasts a wide variety of flavors that will leave you craving for more. Every bite is a harmonious blend of premium ingredients, carefully selected to ensure each donut is a work of art that pleases both the eye and the palate.
+                        
+                        We believe that donuts should not only be delicious but also an experience that transports you to a world of pure delight. That's why we have created a charming, pink-themed ambiance in our store, where you can immerse yourself in a magical atmosphere. The warm and inviting aroma of freshly baked donuts fills the air, and our friendly staff is always ready to provide you with exceptional service and a warm smile.
+                        
+                        Whether you're treating yourself to a well-deserved indulgence, surprising a loved one with a sweet gift, or simply seeking a cheerful spot to unwind, Donut Store is the perfect place for you. We welcome you to savor the joy of life, one delectable pink donut at a time.
+                        
+                        Come join us at Donut Store and let us delight your senses with our scrumptious donuts and delightful ambiance. Indulge in the magic of pink and experience the sweetness that makes life truly delightful. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Brands-->
+
+    <div class="brands">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-5">
+                    <img src="images/logo-coca-cola.png">
+                </div>
+                <div class="col-5">
+                    <img src="images/logo-oppo.png">
+                </div>
+                <div class="col-5">
+                    <img src="images/logo-godrej.png">
+                </div>
+                <div class="col-5">
+                    <img src="images/logo-paypal.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+                <!---FOOTER--->
+                <div class="footer">
+                    <div class="container">
+                        <div class="row">
+                            <div class="footer-col-1">
+                                <h3>Download Our App</h3>
+                                <p>Download for Andriod or IOS</p>
+                                <div class="add-logo">
+                                    <img src="images/play-store.png">
+                                    <img src="images/app-store.png">
+                                </div>
+                            </div>
+                            <div class="footer-col-2">
+                                <img src="images/cart1.png">
+                                <p>We deriver the best Donuts</p>
+                            </div>
+                            <div class="footer-col-3">
+                                <h3>Useful Links</h3>
+                                <ul>
+                                    <li>Coupons</li>
+                                    <li>Blog Post</li>
+                                    <li>Return Policy</li>
+                                    <li>Join Affliate</li>
+                                </ul>
+                            </div>
+                            <div class="footer-col-4">
+                                <h3>Follow us</h3>
+                                <ul>
+                                    <li>Instagram</li>
+                                    <li>TikTok</li>
+                                    <li>Youtube</li>
+                                    <li>Twitter</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr>
+                        <p class="copyright">Copyright 2023 - Donut Store | Jade Norman</p>
+                    </div>
+                </div>
+                <!--js for toggle menu-->
+                <script>
+                    var MenuItems = document.getElementById("MenuItems");
+                
+                    MenuItems.style.maxHeight = "0px";
+                
+                    function menutoggle(){
+                        if(MenuItems.style.maxHeight == "0px"){
+                            MenuItems.style.maxHeight = "fit-content" ;
+                        }
+                        else{
+                            MenuItems.style.maxHeight = "0px";
+                        }
+                    }
+                </script>    
+</body>
+ </html>
